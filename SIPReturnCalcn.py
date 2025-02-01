@@ -7,8 +7,8 @@ import mplfinance as mpf
 from matplotlib import pyplot as plt
 from sp500_calc_test import MonthlyAndWeeklySIPReturnCalcn,MA_Invst_Return_Calcn,BollBandsReturnCalcn,MacdReturnCalcn,MA05MA10ReturnCalcn,MA_SIPReturnCalcn
 # 设置中文字体
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
-plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+# plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
+# plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 def SIPReturnCalcn(ticker_symbol, start_date, end_date):
     #%% 下载股票数据
     stock_data = yf.download(ticker_symbol, start=start_date, end=end_date, interval='1d')
