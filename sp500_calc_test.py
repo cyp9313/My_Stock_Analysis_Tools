@@ -9,8 +9,8 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 warnings.filterwarnings('ignore', category=RuntimeWarning)
 from matplotlib import pyplot as plt
 # 设置中文字体
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
-plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+# plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
+# plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 
 def tic():
     global start_time
